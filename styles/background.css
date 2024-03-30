@@ -1,0 +1,7 @@
+.background-white{
+    background-color: var(--color-white);
+}
+
+.background-gray{
+    background-color: var(--color-gray);
+}

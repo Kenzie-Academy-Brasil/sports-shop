@@ -1,0 +1,53 @@
+.title{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-black);
+}
+
+.title.one{
+    font-size: 44px;
+}
+
+.title.two{
+    font-size: 32px;
+}
+
+.label{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.label.center{
+    text-align: center;
+}
+
+.text{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text.small{
+    font-size: 12px;
+}
+
+.text.line{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.text.center{
+    text-align: center;
+}
+
+.text.right{
+    text-align: right;
+}
+
+.price{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 22px;
+}

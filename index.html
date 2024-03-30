@@ -10,165 +10,302 @@
          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
          rel="stylesheet"
       />
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
       <title>Sports Shop - Artigos esportivos</title>
    </head>
    <body>
-      <header>
-         <img src="/assets/Sports.svg" alt="Logo Sports Shop preta." />
+      <header class="header background-white">
+         <div class="container">
+            <div class="flex-box">
+               <img src="/assets/Sports.svg" alt="Logo Sports Shop preta." />
 
-         <form>
-            <input
-               type="text"
-               name="search"
-               id="search"
-               placeholder="O que você está procurando?"
-            />
-            <button type="submit">Buscar</button>
-         </form>
+               <form>
+                  <input
+                     class="field"
+                     type="text"
+                     name="search"
+                     id="search"
+                     placeholder="O que você está procurando?"
+                  />
+                  <button type="submit" aria-label="search" title="Busca">
+                     <span class="material-symbols-outlined"> search </span>
+                  </button>
+               </form>
 
-         <button>Carrinho</button>
+               <button aria-label="open_cart" title="Carrinho">
+                  <span class="material-symbols-outlined"> shopping_cart </span>
+               </button>
+            </div>
+         </div>
       </header>
 
       <main>
-         <section id="banner">
+         <section class="banner" id="banner">
             <img
                src="/assets/BannerFutebol.jpg"
                alt="Close na bola de futebol e um campo dentro de um estádio."
             />
          </section>
 
-         <section id="categorias">
-            <nav>
-               <ul>
-                  <li>
-                     <a href="#">
-                        <h3>Natação</h3>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <h3>Ciclismo</h3>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <h3>Musculação</h3>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <h3>Competição</h3>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <h3>Basquete</h3>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <h3>Futebol</h3>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-         </section>
-
-         <section id="promocoes">
-            <h2>Promoções</h2>
-            <ul>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis1.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis2.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis3.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis4.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-            </ul>
-         </section>
-
-         <section id="newsletter">
-            <div>
-               <h2>Inscreva-se na Newsletter</h2>
-
-               <form>
-                  <input type="text" name="name" id="name" placeholder="Nome" />
-                  <input type="email" name="email" id="email" placeholder="E-mail" />
-                  <small>
-                     Ao cadastrar-se você aceitará nossa política de privacidade
-                  </small>
-                  <button type="submit">Cadastrar-se</button>
-               </form>
+         <section class="categories" id="categorias">
+            <div class="container">
+               <nav class="category-list">
+                  <ul>
+                     <li>
+                        <a href="#">
+                           <span class="material-symbols-outlined"> pool </span>
+                           <h3 class="label center">Natação</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="material-symbols-outlined"> pedal_bike </span>
+                           <h3 class="label center">Ciclismo</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="material-symbols-outlined"> exercise </span>
+                           <h3 class="label center">Musculação</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="material-symbols-outlined"> trophy </span>
+                           <h3 class="label center">Competição</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="material-symbols-outlined">
+                              sports_basketball
+                           </span>
+                           <h3 class="label center">Basquete</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="material-symbols-outlined"> sports_soccer </span>
+                           <h3 class="label center">Futebol</h3>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
             </div>
-            <img src="/assets/BannerNatacao.jpg" alt="Natação" />
          </section>
 
-         <section id="destaques">
-            <h2>Destaques</h2>
-            <ul>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis1.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis2.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis3.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     <img src="/assets/Tenis4.jpg" alt="Tenis" />
-                     <h3>Tênis esportivo</h3>
-                     <span>R$ 349,99</span>
-                     <p>R$ 249,99</p>
-                  </a>
-               </li>
-            </ul>
+         <section class="background-white products" id="promocoes">
+            <div class="container">
+               <h2 class="title one">Promoções</h2>
+               <div class="swiper" id="sliderPromo">
+                  <ul class="swiper-wrapper">
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis1.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis2.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis3.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis4.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis1.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis2.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis3.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis4.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="swiper-button-next slider-promo-next"></div>
+                  <div class="swiper-button-prev slider-promo-prev"></div>
+               </div>
+            </div>
+         </section>
+
+         <section class="newsletter background-white" id="newsletter">
+            <div class="container">
+               <div class="grid-box">
+                  <div class="box background-gray">
+                     <h2 class="title two">Inscreva-se na Newsletter</h2>
+
+                     <form>
+                        <input
+                           class="field full"
+                           type="text"
+                           name="name"
+                           id="name"
+                           placeholder="Nome"
+                        />
+                        <input
+                           class="field full"
+                           type="email"
+                           name="email"
+                           id="email"
+                           placeholder="E-mail"
+                        />
+                        <div>
+                           <small class="text small right">
+                              Ao cadastrar-se você aceitará nossa política de privacidade
+                           </small>
+                           <button class="button" type="submit">Cadastrar-se</button>
+                        </div>
+                     </form>
+                  </div>
+                  <img src="/assets/BannerNatacao.jpg" alt="Natação" />
+               </div>
+            </div>
+         </section>
+
+         <section class="background-white products" id="destaques">
+            <div class="container">
+               <h2 class="title one">Destaques</h2>
+               <div class="swiper" id="sliderDest">
+                  <ul class="swiper-wrapper">
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis1.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis2.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis3.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis4.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis3.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                     <li class="swiper-slide">
+                        <a href="#">
+                           <img src="/assets/Tenis4.jpg" alt="Tenis" />
+                           <h3 class="text">Tênis esportivo</h3>
+                           <span class="text line">R$ 349,99</span>
+                           <p class="price">R$ 249,99</p>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="swiper-button-next slider-dest-next"></div>
+                  <div class="swiper-button-prev slider-dest-prev"></div>
+               </div>
+            </div>
          </section>
       </main>
 
-      <footer>
-         <p>Todos os direitos reservados<br />KENZIE SPORT STORE - 2024</p>
+      <footer class="background-gray">
+         <div class="container">
+            <p class="text center">
+               Todos os direitos reservados<br />KENZIE SPORT STORE - 2024
+            </p>
+         </div>
       </footer>
+
+      <button type="button" class="fixed-button">
+         <span class="material-symbols-outlined"> perm_phone_msg </span>
+      </button>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+         //Primeiro slider
+         var promoSwiper = new Swiper("#sliderPromo", {
+            slidesPerView: 4,
+            spaceBetween: 40,
+            navigation: {
+               nextEl: ".slider-promo-next",
+               prevEl: ".slider-promo-prev",
+            },
+         });
+
+         //Segundo slider
+         var destSlider = new Swiper("#sliderDest", {
+            slidesPerView: 4,
+            spaceBetween: 40,
+            navigation: {
+               nextEl: ".slider-dest-next",
+               prevEl: ".slider-dest-prev",
+            },
+         });
+      </script>
    </body>
 </html>
